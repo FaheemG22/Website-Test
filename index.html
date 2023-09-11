@@ -111,6 +111,9 @@
       </nav><!-- .navbar -->
 
     </div>
+    <div>
+      <button onclick="myFunction()">dark mode</button>
+    </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -535,6 +538,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
 
 </body>
 
