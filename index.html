@@ -106,14 +106,14 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li> <button onclick="myFunction()">dark mode</button> <li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
-    <div>
-      <button onclick="myFunction()">dark mode</button>
-    </div>
+      
+
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -443,6 +443,39 @@
             </form>
           </div>
 
+          <div class="col-lg-6">
+            <div class="row">
+              <div>
+                
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <p>Do you need:</p>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                 <label for="html">Boots/Backpack</label><br>
+                 <input type="radio" id="css" name="fav_language" value="CSS">
+                 <label for="css">Food</label><br>
+                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                 <label for="javascript">Tent</label>
+                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                 <label for="javascript">Tent</label>
+                 <p>Will be provided for a fee</p>
+                
+
+                <div class="dropdown">
+                  <label for="cars">Meal if above option selected:</label>
+                  
+                  <select id="cars" name="cars">
+                    <option value="N/A">N/A</option>
+                    <option value="Tuna & Mayo">Tuna & Mayo</option>
+                    <option value="Egg & Cheese">Egg & Cheese</option>
+                    <option value="Chicken Tikka">Chicken Tikka</option>
+                  </select>
+                  <label>Sandwich</label>
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -522,6 +555,12 @@
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
+      <div class="credits">
+        <button type="button" onclick="doit()">
+          Click me to display elapsed Time.
+        </button>
+        <p id="myPara"> </p>
+      </div>
     </div>
   </footer><!-- End Footer -->
 
@@ -540,10 +579,23 @@
   <script src="assets/js/main.js"></script>
 
   <script>
+
+  var start = new Date().getTime();
+
+  function doit() {
+    var end = new Date().getTime();
+    var time = (end - start) / 1000;
+    document.getElementById("myPara").innerHTML=('Execution time: ' + time.toFixed(1) + ' seconds.');
+  }
+
   function myFunction() {
      var element = document.body;
      element.classList.toggle("dark-mode");
   }
+
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}  
   </script>
 
 </body>
