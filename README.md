@@ -1,7 +1,7 @@
 # https://faheemg22.github.io/Website-Test/
 # Faheems's website
 
-![amiresponsive](assets\img\responsive.png)
+![amiresponsive](assets\img\Responsive.PNG)
 
 
 
