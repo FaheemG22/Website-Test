@@ -1,9 +1,9 @@
 # https://faheemg22.github.io/Website-Test/
 # Faheems's website
 
-![amiresponsive](assets\img\Responsive.PNG)
+![amiresponsive](assets\img\Responsive.png)
 
-[View the deployed website here](https://shipleysteve.github.io/)
+
 
 ## User Experience (UX)
 
