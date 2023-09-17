@@ -15,11 +15,13 @@
 :root{
   --background_colour: #67b0d1;
   --background_colour_2 : #fff;
+  --header_colour : #282828;
 }
 
 .dark-mode {
   --background_colour: #282828;
-  --background_colour_2: #474747 ;
+  --background_colour_2: #474747;
+  --header_colour : #fff;
   color: #fff;
 }
 
@@ -92,7 +94,7 @@ h6 {
 
 .back-to-top:hover {
   background: var(--background_colour);
-  color: #fff;
+  color: var(--header_colour);
 }
 
 .back-to-top.active {
@@ -117,7 +119,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 24px 0;
-  background: var(--background_colour);
+  background: var(--header_colour);
 }
 
 #header.header-transparent {
@@ -125,7 +127,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: var(--background_colour);
+  background: var(--header_colour);
   padding: 12px;
 }
 
@@ -141,7 +143,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: var(--background_colour_2);
+  color: var(--header_colour);
   text-decoration: none;
 }
 
@@ -190,7 +192,7 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: var(--background_colour_2);
+  color: var(--header_colour);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -219,7 +221,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: var(--background_colour_2);
+  background: var(--header_colour);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -243,7 +245,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #fff;
+  color: var(--background_colour_2);
 }
 
 .navbar .dropdown:hover>ul {
@@ -475,7 +477,7 @@ h6 {
 }
 
 #hero h2 {
-  color: var(--background_colour_1);
+  color: var(--background_colour_2);
   margin-bottom: 50px;
   font-size: 20px;
   text-transform: uppercase;
