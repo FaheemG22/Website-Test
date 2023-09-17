@@ -106,12 +106,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <ul>
-          <li> <button onclick="darken()" class="dark_button">
-            <img src="assets/img/sun.webp" alt="buttonpng"
-            width="32" height="32"/></img>
-          </button> <li>
+          <li> <button onclick="myFunction()">dark mode</button> <li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -593,7 +588,7 @@
     document.getElementById("myPara").innerHTML=('Execution time: ' + time.toFixed(1) + ' seconds.');
   }
 
-  function darken() {
+  function myFunction() {
      var element = document.body;
      element.classList.toggle("dark-mode");
   }
