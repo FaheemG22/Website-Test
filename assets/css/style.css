@@ -17,6 +17,7 @@
   --background_colour_2 : #fff;
   --header_colour : #282828;
   --background_img: url("../img/hero-bg.webp") ;
+  --sectionimg : url(../img/section-title-bg.webp)
 }
 
 .dark-mode {
@@ -24,6 +25,8 @@
   --background_colour_2: #474747;
   --header_colour : #fff;
   --background_img: url("../img/hero-bg-2.webp") ;
+  --sectionimg : url(../img/section-title-bg-2.webp)
+
   color: #fff;
 }
 
@@ -33,14 +36,29 @@
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
-  margin-left: 50x;
+  margin-left: 50px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #67b0d1;
+  color: var(--background_colour);
   white-space: nowrap;
   transition: 0.3s;
   border-radius: 50%;
+}
+
+.time_button{
+  background-color: var(--background_colour_2) ;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--header_colour);
+  white-space: nowrap;
+  transition: 0.3s;
+  border-radius: 25%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
 }
 
 body {
@@ -560,7 +578,7 @@ section {
   width: 122px;
   height: 66px;
   background-color: var(--background_colour_2) ;
-  background: url(../img/section-title-bg.webp) no-repeat;
+  background: var(--sectionimg);
   z-index: -1;
 }
 
@@ -1074,7 +1092,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: var(--background_colour_2);
+  color: var(--background_colour);
   font-size: 26px;
 }
 
@@ -1095,11 +1113,12 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: var(--background_colour_2);
+  background: var(--background_colour);
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
+  color:var(--header_colour)
 }
 
 .testimonials .testimonial-item p::after {
@@ -1122,7 +1141,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: var(--background_colour_2);
+  background-color: var(--background_colour);
   opacity: 1;
   border: 1px solid var(--background_colour);
 }
@@ -1134,6 +1153,10 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team{
+  background-color: var(--background_colour_2);
+}
+
 .team .member {
   text-align: center;
   margin-bottom: 80px;
@@ -1183,6 +1206,7 @@ section {
 }
 
 .team .member span {
+  
   font-style: italic;
   display: block;
   font-size: 13px;
